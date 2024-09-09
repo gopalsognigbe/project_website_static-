@@ -14,9 +14,11 @@ p.categorie{
 }
 div.contenu{
     background-color: white;
-    margin: -40px 10% 80px 10%;
+    margin: -40px 8px 80px 8px;
     padding: 30px;
     min-width: 150px; 
+    /*overflow: visible;*/
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0,0.1);
 
 }
 h1{
@@ -78,13 +80,12 @@ div.column h2{
     padding-bottom: 5%;
 }
 div.colonne1{
-    margin-right: 10%;
+   
     display: inline-block;
 }
-div.colonne2{
-    float: right;
 
-}
+
+
 div.ingredients p{
     text-align: center;
     font-size: 14px;
@@ -94,3 +95,37 @@ div.ingredients p{
 *{
     overflow: auto;
 }
+/* style pour ordinateur*/
+@media only screen and (min-width: 768px) {
+    div.contenu {
+      min-width: 350px;
+      margin: -40px 10% 80px 10%;
+     padding: 30px;
+    }
+    div.column{
+        width:45%;
+        margin-top: 20px;
+    }
+    div.column h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        border-bottom: 10px solid #ff00006d ;
+        padding-bottom: 5%;
+    }
+    div.colonne1{
+        margin-right: 10%;
+        display: inline-block;
+    }
+    div.colonne2{
+        float: right;
+    } 
+  } 
+
+  @media only screen and (min-width: 960px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
+  }
